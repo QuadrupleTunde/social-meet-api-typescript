@@ -1,0 +1,737 @@
+{
+	"info": {
+		"_postman_id": "ee829855-01de-4438-a80e-dcae359794a1",
+		"name": "Social Meet Up Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Get ALL Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/events/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Event",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/events/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"events",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/events/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Event",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/events/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"events",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing Event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/events/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"events",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ALL Locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/locations/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"locations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/locations/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"locations",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/locations/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"locations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Location",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/locations/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"locations",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing Location",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/locations/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"locations",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ALL Hobbies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hobbies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hobbies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Hobby",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hobbies/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hobbies",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Hobby",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hobbies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hobbies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Hobby",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hobbies/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hobbies",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing Hobby",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/hobbies/:name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"hobbies",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Heroku",
+			"item": [
+				{
+					"name": "Get ALL Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/events/",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Event",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/events/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"events",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/events/",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Event",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/events/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"events",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing Event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/events/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"events",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ALL Locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/locations/",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/locations/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/locations/",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Location",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/locations/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing Location",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/locations/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ALL Hobbies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/hobbies",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"hobbies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Hobby",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/hobbies/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"hobbies",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Hobby",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/hobbies",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"hobbies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Existing Hobby",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Existing Hobby",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://social-meet-up-api.herokuapp.com/hobbies/:name",
+							"protocol": "https",
+							"host": [
+								"social-meet-up-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"hobbies",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
